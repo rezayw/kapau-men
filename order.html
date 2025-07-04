@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Kapau-Men Resto</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1>Welcome to Kapau-Men</h1>
+    <nav>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">About Us</a>
+        <a href="view_orders.php">Contact</a>
+    </nav>
+    <h2>Place Your Order</h2>
+<form method="POST" action="submit_order.php">
+  <label>Name: <input type="text" name="name" required></label><br>
+  <label>Phone: <input type="text" name="phone" required></label><br>
+  <label>Menu Item:
+    <select name="menu_item">
+      <option>Nasi Kapau</option>
+      <option>Rendang</option>
+      <option>Dendeng Balado</option>
+    </select>
+  </label><br>
+  <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
+
