@@ -1,6 +1,9 @@
 # kapau-men
 Kapau-men is a simple web application for kind of ordering Padang food :) Indonesian fav taste and delicious food using postgre HTML, CSS, JS, and PHP with Postgres DB. These one I'm create by my own to learn feeding data and post form action for booking order menus and queue.
 
+<img width="1438" alt="Screenshot 2025-07-05 at 15 01 42" src="https://github.com/user-attachments/assets/ccc47482-6c8f-4947-a863-9692f36220b0" />
+
+
 
 ## DB Creation
 
