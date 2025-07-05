@@ -11,7 +11,7 @@ CREATE DATABASE kapau_db;
 
 ```
 
-### Create Table
+### Create Table Form Order
 
 ```
 CREATE TABLE orders (
