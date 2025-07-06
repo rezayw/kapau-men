@@ -45,7 +45,7 @@ table { width: 100%; border-collapse: collapse; margin-top: 1em; }
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: #c0392b;
+  background-color: #07650b;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -63,21 +63,51 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #07650b;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #53c3ab;
 }
 
 div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  border-radius: 15px;
+  background-color: #cef8e1b3;
   padding: 20px;
+}
+
+.float_button_print{
+	position:fixed;
+  text-decoration:none ;
+	width:90px;
+	height:35px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:30px;
+	text-align:center;
+  line-height: 32px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float_button_delete{
+	position:fixed;
+  text-decoration:none ;
+	width:130px;
+	height:35px;
+	bottom:40px;
+	right:140px;
+	background-color:rgb(186, 9, 9);
+	color:#FFF;
+	border-radius:30px;
+	text-align:center;
+  line-height: 32px;
+	box-shadow: 2px 2px 3px #999;
 }

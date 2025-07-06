@@ -41,5 +41,8 @@ $result = pg_query($conn, "SELECT * FROM orders ORDER BY ordered_at ASC");
       <?php endwhile; ?>
     </tbody>
   </table>
+  <a href="download.php" class="float_button_print">PRINT</a>
+  <a href="delete.php" class="float_button_delete">DELETE ALL</a>
+  </div>
 </body>
 </html>

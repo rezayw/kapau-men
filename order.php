@@ -44,7 +44,6 @@ $selected = $_GET['menu'] ?? '';
       <option value=6>6 Porsi</option>
       <option value=7>7 Porsi</option>
     </select>
-
     <input type="submit" value="Submit">
   </form>
 </div>
