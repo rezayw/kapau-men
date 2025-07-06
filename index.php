@@ -13,7 +13,7 @@ $result = pg_query($conn, "SELECT * FROM menu_items ORDER BY id ASC");
   <h1>Welcome to Kapau-men Restorante</h1>
   <nav>
     <a href="index.php">Menu</a> |
-    <a href="order.php">Order</a> |
+    <a href="order.php">Order Now</a> |
     <a href="view_orders.php">My Order</a>
   </nav>
   <div class="card-container">

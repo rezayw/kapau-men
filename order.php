@@ -17,20 +17,37 @@ $selected = $_GET['menu'] ?? '';
     <a href="view_orders.php">My Order</a>
   </nav>
   <h2>Place Your Order</h2>
+  <div>
   <form method="POST" action="submit_order.php">
-    <label>Name: <input type="text" name="name" required></label><br>
-    <label>Phone: <input type="text" name="phone" required></label><br>
-    <label>Menu Item:
-      <select name="menu_item">
+    <label for="fname">Nama Pemesan</label>
+    <input type="text" id="fname" name="name" required placeholder="Your name..">
+
+    <label for="lname">Nomer Telfon</label>
+    <input type="text" id="lname" name="phone" required placeholder="Your Phone..">
+
+    <label for="menu_item">Menu Makanan</label>
+    <select name="menu_item" required>
         <?php while ($row = pg_fetch_assoc($result)): ?>
           <option value="<?= htmlspecialchars($row['name']) ?>" <?= ($row['name'] == $selected ? 'selected' : '') ?>>
             <?= htmlspecialchars($row['name']) ?>
           </option>
         <?php endwhile; ?>
-      </select>
-    </label><br>
-    <label>Jumlah: <input type="number" name="qty" required></label><br>
-    <button type="submit">Submit</button>
+    </select>
+
+    <label for="qty">Jumlah</label>
+    <select id="qty" name="qty" required>
+      <option value=1>1 Porsi</option>
+      <option value=2>2 Porsi</option>
+      <option value=3>3 Porsi</option>
+      <option value=4>4 Porsi</option>
+      <option value=5>5 Porsi</option>
+      <option value=6>6 Porsi</option>
+      <option value=7>7 Porsi</option>
+    </select>
+
+    <input type="submit" value="Submit">
   </form>
+</div>
+ 
 </body>
 </html>

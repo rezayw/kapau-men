@@ -10,6 +10,11 @@ $result = pg_query($conn, "SELECT * FROM orders ORDER BY ordered_at ASC");
 </head>
 <body>
   <h1>Daftar Pesanan</h1>
+  <nav>
+    <a href="index.php">Menu</a> |
+    <a href="order.php">Order Now</a> |
+    <a href="view_orders.php">My Order</a>
+  </nav>
   <table>
     <thead>
       <tr>
