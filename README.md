@@ -22,6 +22,8 @@ CREATE TABLE orders (
   name TEXT,
   phone TEXT,
   menu_item TEXT,
+  qty INT,
+  total_price INT,
   ordered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

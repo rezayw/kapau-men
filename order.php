@@ -29,6 +29,7 @@ $selected = $_GET['menu'] ?? '';
         <?php endwhile; ?>
       </select>
     </label><br>
+    <label>Jumlah: <input type="number" name="qty" required></label><br>
     <button type="submit">Submit</button>
   </form>
 </body>

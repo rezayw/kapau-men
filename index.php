@@ -6,15 +6,15 @@ $result = pg_query($conn, "SELECT * FROM menu_items ORDER BY id ASC");
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kapau-Men Restaurant</title>
+  <title>Kapau-Men Resto</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h1>Selamat Datang di Kapau-Men</h1>
+  <h1>Welcome to Kapau-men Restorante</h1>
   <nav>
     <a href="index.php">Menu</a> |
-    <a href="order.php">Pesan</a> |
-    <a href="view_orders.php">Lihat Pesanan</a>
+    <a href="order.php">Order</a> |
+    <a href="view_orders.php">My Order</a>
   </nav>
   <div class="card-container">
     <?php while ($row = pg_fetch_assoc($result)): ?>
